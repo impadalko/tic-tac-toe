@@ -1,9 +1,16 @@
+html {
+  user-select: none;
+}
+
 .hidden {
   display: none;
 }
 
 .marker {
   opacity: 0;
+  position: absolute;
+  width: 50%;
+  height: 50%;
 }
 
 .game-board {
@@ -21,4 +28,83 @@
 
 .grid-cell {
   background-color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-move-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#cell-1-x:checked ~ .game-board .grid-cell:nth-child(1) .user-marker {
+  opacity: 1;
+}
+#cell-1-x:checked ~ .game-board .grid-cell:nth-child(1) .user-move-label {
+  display: none;
+}
+
+#cell-2-x:checked ~ .game-board .grid-cell:nth-child(2) .user-marker {
+  opacity: 1;
+}
+#cell-2-x:checked ~ .game-board .grid-cell:nth-child(2) .user-move-label {
+  display: none;
+}
+
+#cell-3-x:checked ~ .game-board .grid-cell:nth-child(3) .user-marker {
+  opacity: 1;
+}
+#cell-3-x:checked ~ .game-board .grid-cell:nth-child(3) .user-move-label {
+  display: none;
+}
+
+#cell-4-x:checked ~ .game-board .grid-cell:nth-child(4) .user-marker {
+  opacity: 1;
+}
+#cell-4-x:checked ~ .game-board .grid-cell:nth-child(4) .user-move-label {
+  display: none;
+}
+
+#cell-5-x:checked ~ .game-board .grid-cell:nth-child(5) .user-marker {
+  opacity: 1;
+}
+#cell-5-x:checked ~ .game-board .grid-cell:nth-child(5) .user-move-label {
+  display: none;
+}
+
+#cell-6-x:checked ~ .game-board .grid-cell:nth-child(6) .user-marker {
+  opacity: 1;
+}
+#cell-6-x:checked ~ .game-board .grid-cell:nth-child(6) .user-move-label {
+  display: none;
+}
+
+#cell-7-x:checked ~ .game-board .grid-cell:nth-child(7) .user-marker {
+  opacity: 1;
+}
+#cell-7-x:checked ~ .game-board .grid-cell:nth-child(7) .user-move-label {
+  display: none;
+}
+
+#cell-8-x:checked ~ .game-board .grid-cell:nth-child(8) .user-marker {
+  opacity: 1;
+}
+#cell-8-x:checked ~ .game-board .grid-cell:nth-child(8) .user-move-label {
+  display: none;
+}
+
+#cell-9-x:checked ~ .game-board .grid-cell:nth-child(9) .user-marker {
+  opacity: 1;
+}
+#cell-9-x:checked ~ .game-board .grid-cell:nth-child(9) .user-move-label {
+  display: none;
 }
